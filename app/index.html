@@ -5,54 +5,301 @@ engine: ejs
 current: index
 ---
 
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+<div class="container p-4">
+  <div class="admin d-flex justify-content-between align-items-center mb-7">
+    <div class="admin-group d-flex align-items-center">
+      <h1 class="me-3">Admin</h1>
+      <div class="add-admin d-flex">
+        <span class="material-icons me-2">
+          add
+        </span>
+        Add New Admin
       </div>
     </div>
+    <div class="admin-icon">
+      <span class="material-icons me-4">
+        search
+      </span>
+      <span class="material-icons">
+        notifications_active
+      </span>
+    </div>
   </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID
+          <span class="material-icons align-top">
+            arrow_downward
+          </span>
+        </th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Verified</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="align-middle">
+        <th scope="row">#1</th>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td class="p-4">Yes</td>
+        <td class="align-middle">
+          <ul class="d-flex mb-0">
+            <a href="#" class="text-decoration-none">
+              <ol class="material-icons">
+                <span>
+                  visibility
+                </span>
+              </ol>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <ol>
+                <span class="material-icons">
+                  edit
+                </span>
+              </ol>
+            </a>
+          </ul>
+        </td>
+      </tr>
+      <tr class="align-middle">
+        <th scope="row">#2</th>
+        <td>Zaina Goldsmith</td>
+        <td>zaina.goldsmith@mail.com</td>
+        <td class="p-4">Yes</td>
+        <td class="align-middle">
+          <ul class="d-flex mb-0">
+            <a href="#" class="text-decoration-none">
+              <ol class="material-icons">
+                <span>
+                  visibility
+                </span>
+              </ol>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <ol>
+                <span class="material-icons">
+                  edit
+                </span>
+              </ol>
+            </a>
+          </ul>
+        </td>
+      </tr>
+      <tr class="align-middle">
+        <th scope="row">#3</th>
+        <td>Mahima Lopez</td>
+        <td>mahima.lopez@mail.com</td>
+        <td class="p-4">Yes</td>
+        <td class="align-middle">
+          <ul class="d-flex mb-0">
+            <a href="#" class="text-decoration-none">
+              <ol class="material-icons">
+                <span>
+                  visibility
+                </span>
+              </ol>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <ol>
+                <span class="material-icons">
+                  edit
+                </span>
+              </ol>
+            </a>
+          </ul>
+        </td>
+      </tr>
+      <tr class="align-middle">
+        <th scope="row">#4</th>
+        <td>Pharrell Murray</td>
+        <td>pharrell.murray@mail.com</td>
+        <td class="p-4">Yes</td>
+        <td class="align-middle">
+          <ul class="d-flex mb-0">
+            <a href="#" class="text-decoration-none">
+              <ol class="material-icons">
+                <span>
+                  visibility
+                </span>
+              </ol>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <ol>
+                <span class="material-icons">
+                  edit
+                </span>
+              </ol>
+            </a>
+          </ul>
+        </td>
+      </tr>
+      <tr class="align-middle">
+        <th scope="row">#5</th>
+        <td>Annika Mcbride</td>
+        <td>annika.mcbride@mail.com</td>
+        <td class="p-4">Yes</td>
+        <td class="align-middle">
+          <ul class="d-flex mb-0">
+            <a href="#" class="text-decoration-none">
+              <ol class="material-icons">
+                <span>
+                  visibility
+                </span>
+              </ol>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <ol>
+                <span class="material-icons">
+                  edit
+                </span>
+              </ol>
+            </a>
+          </ul>
+        </td>
+      </tr>
+      <tr class="align-middle">
+        <th scope="row">#6</th>
+        <td>Fatimah Clark</td>
+        <td>fatimah.clark@mail.com</td>
+        <td class="p-4">Yes</td>
+        <td class="align-middle">
+          <ul class="d-flex mb-0">
+            <a href="#" class="text-decoration-none">
+              <ol class="material-icons">
+                <span>
+                  visibility
+                </span>
+              </ol>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <ol>
+                <span class="material-icons">
+                  edit
+                </span>
+              </ol>
+            </a>
+          </ul>
+        </td>
+      </tr>
+      <tr class="align-middle">
+        <th scope="row">#7</th>
+        <td>Klaudia Rhodes</td>
+        <td>klaudia.rhodes@mail.com</td>
+        <td class="p-4">Yes</td>
+        <td class="align-middle">
+          <ul class="d-flex mb-0">
+            <a href="#" class="text-decoration-none">
+              <ol class="material-icons">
+                <span>
+                  visibility
+                </span>
+              </ol>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <ol>
+                <span class="material-icons">
+                  edit
+                </span>
+              </ol>
+            </a>
+          </ul>
+        </td>
+      </tr>
+      <tr class="align-middle">
+        <th scope="row">#8</th>
+        <td>Tillie Lucero</td>
+        <td>tillie.lucero@mail.com</td>
+        <td class="p-4">Yes</td>
+        <td class="align-middle">
+          <ul class="d-flex mb-0">
+            <a href="#" class="text-decoration-none">
+              <ol class="material-icons">
+                <span>
+                  visibility
+                </span>
+              </ol>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <ol>
+                <span class="material-icons">
+                  edit
+                </span>
+              </ol>
+            </a>
+          </ul>
+        </td>
+      </tr>
+      <tr class="align-middle">
+        <th scope="row">#9</th>
+        <td>Sabrina Stephenson</td>
+        <td>sabrina.stephenson@mail.com</td>
+        <td class="p-4">Yes</td>
+        <td class="align-middle">
+          <ul class="d-flex mb-0">
+            <a href="#" class="text-decoration-none">
+              <ol class="material-icons">
+                <span>
+                  visibility
+                </span>
+              </ol>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <ol>
+                <span class="material-icons">
+                  edit
+                </span>
+              </ol>
+            </a>
+          </ul>
+        </td>
+      </tr>
+      <tr class="align-middle">
+        <th scope="row">#10</th>
+        <td>Annie Smith</td>
+        <td>annie.smith@mail.com</td>
+        <td class="p-4">Yes</td>
+        <td class="align-middle">
+          <ul class="d-flex mb-0">
+            <a href="#" class="text-decoration-none">
+              <ol class="material-icons">
+                <span>
+                  visibility
+                </span>
+              </ol>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <ol>
+                <span class="material-icons">
+                  edit
+                </span>
+              </ol>
+            </a>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-end m-0">
+      <li class="page-item"><a class="page-link d-flex" href="#">
+        <span class="material-icons">
+          chevron_left
+          </span>
+      </a></li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link d-flex" href="#">
+        <span class="material-icons">
+          navigate_next
+          </span>
+      </a></li>
+    </ul>
+  </nav>
+
 </div>
